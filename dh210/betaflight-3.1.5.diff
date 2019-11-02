@@ -1,0 +1,43 @@
+# Betaflight / X_RACERSPI 3.1.5 Feb  7 2017 / 22:34:57 (4646f9d)
+
+feature -RX_PPM
+feature -VBAT
+feature RX_SERIAL
+feature AIRMODE
+map TAER1234
+serial 1 32 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+aux 0 0 1 1300 1700
+aux 1 12 1 1700 2100
+aux 2 25 2 1700 2100
+rxfail 3 h
+set rssi_channel = 8
+set min_throttle = 1050
+set min_command = 990
+set use_unsynced_pwm = ON
+set motor_pwm_protocol = MULTISHOT
+set motor_pwm_rate = 8000
+set serialrx_provider = SBUS
+set deadband = 5
+set yaw_deadband = 5
+set failsafe_delay = 5
+set acc_hardware = NONE
+set pid_process_denom = 1
+set blackbox_rate_denom = 4
+profile 0
+
+set p_pitch = 72
+set d_pitch = 32
+set p_roll = 54
+set d_roll = 30
+set p_yaw = 95
+rateprofile 0
+rateprofile 0
+
+set rc_rate = 82
+set rc_rate_yaw = 82
+set rc_expo = 35
+set rc_yaw_expo = 35
+set roll_srate = 87
+set pitch_srate = 87
+set yaw_srate = 87
