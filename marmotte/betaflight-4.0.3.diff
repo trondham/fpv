@@ -1,0 +1,156 @@
+# Betaflight / KAKUTEF7 (KTF7) 4.0.3 Jun  1 2019 / 11:32:26 (094cfc956) MSP API: 1.41
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name 
+manufacturer_id 
+mcu_id 002700333036510c36363631
+signature 00000000000000000e000000000000000000000000000000ad4722007d472200
+
+# name
+name Marmotte
+
+# resources
+
+# timer
+
+# dma
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature TELEMETRY
+
+# beeper
+beeper -ON_USB
+
+# beacon
+
+# map
+map TAER1234
+
+# serial
+serial 0 2048 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 35 1 1700 2100 0 0
+
+# adjrange
+adjrange 0 0 2 900 2100 12 2 0 0
+
+# rxrange
+
+# vtx
+
+# rxfail
+rxfail 3 h
+
+# display_name
+
+# master
+set acc_hardware = NONE
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1020
+set max_check = 1978
+set rssi_channel = 8
+set serialrx_provider = FPORT
+set serialrx_inverted = ON
+set serialrx_halfduplex = ON
+set motor_pwm_protocol = DSHOT1200
+set pid_process_denom = 1
+set osd_warn_core_temp = OFF
+set osd_rssi_alarm = 30
+set osd_cap_alarm = 0
+set osd_alt_alarm = 0
+set osd_vbat_pos = 2412
+set osd_rssi_pos = 2394
+set osd_tim_2_pos = 2423
+set osd_mah_drawn_pos = 2401
+set osd_craft_name_pos = 2081
+set osd_warnings_pos = 2281
+set osd_disarmed_pos = 2219
+set osd_stat_bb_no = OFF
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_power = 4
+set vtx_freq = 5917
+set vcd_video_system = NTSC
+
+# profile
+profile 0
+
+set f_pitch = 95
+set f_roll = 90
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+set roll_rc_rate = 90
+set pitch_rc_rate = 90
+set yaw_rc_rate = 90
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+set roll_srate = 82
+set pitch_srate = 82
+set yaw_srate = 82
+
+# rateprofile
+rateprofile 1
+
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 10
+
+# rateprofile
+rateprofile 2
+
+set roll_rc_rate = 50
+set pitch_rc_rate = 50
+set yaw_rc_rate = 50
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
