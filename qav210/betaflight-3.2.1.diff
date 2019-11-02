@@ -1,0 +1,44 @@
+# Betaflight / LUXV2_RACE (LUXR) 3.2.1 Oct 15 2017 / 19:38:54 (434db9a36) MSP API: 1.36
+name QAV210
+
+feature AIRMODE
+feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
+beeper -ON_USB
+map TAER1234
+serial 0 0 115200 57600 0 115200
+serial 1 0 115200 57600 0 115200
+serial 3 64 115200 57600 0 115200
+serial 4 32 115200 57600 0 115200
+aux 0 0 1 1300 1700
+aux 1 13 1 1700 2100
+aux 2 35 0 1300 2100
+set gyro_sync_denom = 2
+set gyro_notch1_hz = 0
+set gyro_notch1_cutoff = 0
+set gyro_notch2_hz = 0
+set gyro_notch2_cutoff = 0
+set acc_hardware = NONE
+set min_check = 1025
+set rssi_channel = 8
+set blackbox_device = NONE
+set motor_pwm_protocol = DSHOT600
+set pid_process_denom = 1
+profile 0
+
+set dterm_lowpass_type = PT1
+set anti_gravity_gain = 2500
+set setpoint_relax_ratio = 40
+set dterm_setpoint_weight = 106
+set p_pitch = 70
+set p_roll = 56
+set p_yaw = 95
+rateprofile 0
+
+set rc_rate = 80
+set rc_rate_yaw = 80
+set rc_expo = 31
+set rc_expo_yaw = 31
+set roll_srate = 83
+set pitch_srate = 83
+set yaw_srate = 83
