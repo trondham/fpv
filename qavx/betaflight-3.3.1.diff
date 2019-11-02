@@ -1,0 +1,61 @@
+# Betaflight / LUXV2_RACE (LUXR) 3.3.1 Apr  3 2018 / 09:47:48 (4b7eaf79d) MSP API: 1.37
+name QAV-X
+
+feature LED_STRIP
+feature AIRMODE
+feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
+beeper -ON_USB
+map TAER1234
+serial 0 0 115200 57600 0 115200
+serial 1 0 115200 57600 0 115200
+serial 3 64 115200 57600 0 115200
+serial 4 32 115200 57600 0 115200
+led 0 0,6:W:A:2
+led 1 0,7:W:A:2
+led 2 0,8:W:A:2
+led 3 0,9:W:A:2
+led 4 15,6:E:A:10
+led 5 15,7:E:A:10
+led 6 15,8:E:A:10
+led 7 15,9:E:A:10
+aux 0 0 1 1300 1700 0
+aux 1 13 1 1700 2100 0
+aux 2 35 0 1300 2100 0
+adjrange 0 0 3 900 2100 12 3
+rxfail 3 h
+set gyro_notch1_hz = 0
+set gyro_notch2_hz = 0
+set acc_hardware = NONE
+set min_check = 1020
+set max_check = 1980
+set motor_pwm_protocol = DSHOT600
+set pid_process_denom = 2
+profile 0
+
+set dterm_lowpass_type = PT1
+set anti_gravity_gain = 2500
+set setpoint_relax_ratio = 40
+set dterm_setpoint_weight = 106
+set p_pitch = 64
+set d_pitch = 28
+set p_roll = 50
+set d_roll = 26
+set p_yaw = 90
+rateprofile 0
+
+set roll_rc_rate = 90
+set pitch_rc_rate = 90
+set yaw_rc_rate = 90
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+set roll_srate = 82
+set pitch_srate = 82
+set yaw_srate = 82
+
+rateprofile 1
+
+set roll_rc_rate = 50
+set pitch_rc_rate = 50
+set yaw_rc_rate = 50

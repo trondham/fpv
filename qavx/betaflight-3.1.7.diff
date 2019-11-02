@@ -1,0 +1,42 @@
+# Betaflight / LUXV2_RACE 3.1.7 Apr  3 2017 / 22:09:37 (e1c4b5c)
+
+feature LED_STRIP
+feature AIRMODE
+map TAER1234
+serial 1 0 115200 57600 0 115200
+serial 3 64 115200 57600 0 115200
+serial 4 32 115200 57600 0 115200
+led 0 0,6::CT:6
+led 1 0,7::CT:6
+led 2 0,8::CT:6
+led 3 0,9::CT:6
+led 4 15,6::CT:6
+led 5 15,7::CT:6
+led 6 15,8::CT:6
+led 7 15,9::CT:6
+aux 0 0 1 1300 1700
+aux 1 13 1 1700 2100
+rxfail 3 h
+set rssi_channel = 8
+set motor_pwm_protocol = DSHOT600
+set failsafe_delay = 5
+set acc_hardware = NONE
+set pid_process_denom = 1
+profile 0
+
+set anti_gravity_gain =  2.500
+set p_pitch = 64
+set d_pitch = 28
+set p_roll = 50
+set d_roll = 26
+set p_yaw = 90
+rateprofile 0
+rateprofile 0
+
+set rc_rate = 80
+set rc_rate_yaw = 80
+set rc_expo = 31
+set rc_yaw_expo = 31
+set roll_srate = 83
+set pitch_srate = 83
+set yaw_srate = 83
