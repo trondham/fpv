@@ -71,7 +71,6 @@ set max_check = 1980
 set serialrx_provider = FPORT
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
-set motor_poles = 12
 set current_meter = ADC
 set pid_process_denom = 1
 set osd_warn_core_temp = OFF
