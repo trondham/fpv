@@ -65,6 +65,13 @@ rxfail 3 h
 
 # master
 set gyro_sync_denom = 2
+set gyro_lowpass2_hz = 425
+set dyn_notch_range = LOW
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 200
+set dyn_notch_min_hz = 90
+set dyn_lpf_gyro_min_hz = 340
+set dyn_lpf_gyro_max_hz = 850
 set acc_hardware = NONE
 set mag_hardware = NONE
 set baro_hardware = NONE
@@ -92,6 +99,11 @@ set gyro_1_align_yaw = 1800
 set name = Acrobrat
 
 profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 119
+set dyn_lpf_dterm_max_hz = 289
+set dterm_lowpass2_hz = 255
 
 profile 1
 
@@ -134,7 +146,7 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 2
+rateprofile 0
 
 # save configuration
 save
