@@ -5,4 +5,4 @@
 * VTX: HGLRC XJB TX20.V2 Mini FPV Transmitter
 * Receiver: FrSky R-XSR (FPort)
 * Camera: Runcam Split
-* Motors: T-Motor F20
+* Motors: T-Motor F20-II 1408 3750KV (9N12P)
