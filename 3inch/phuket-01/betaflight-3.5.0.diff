@@ -1,0 +1,81 @@
+# Betaflight / OMNIBUSF4 (OBF4) 3.5.0 Aug 14 2018 / 03:49:19 (1d710afd7) MSP API: 1.40
+
+board_name OMNIBUSF4
+manufacturer_id AIRB
+
+# name
+name Tron2D
+
+# resources
+resource MOTOR 5 NONE
+resource SONAR_TRIGGER 1 NONE
+resource LED_STRIP 1 NONE
+resource SERIAL_TX 11 A01
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature SOFTSERIAL
+feature TELEMETRY
+feature AIRMODE
+
+# beeper
+beeper -ON_USB
+
+# beacon
+
+# map
+map TAER1234
+
+# serial
+serial 5 64 115200 57600 0 115200
+serial 30 2048 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 35 1 1700 2100 0 0
+
+# adjrange
+adjrange 0 0 0 900 1175 12 2 0 0
+
+# rxrange
+
+# vtx
+
+# rxfail
+rxfail 3 h
+
+# master
+set acc_hardware = NONE
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1020
+set max_check = 1980
+set serialrx_provider = FPORT
+set serialrx_halfduplex = ON
+set motor_pwm_protocol = DSHOT600
+set pid_process_denom = 1
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_freq = 5917
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0
+

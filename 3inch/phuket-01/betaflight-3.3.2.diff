@@ -1,0 +1,104 @@
+# Betaflight / OMNIBUSF4 (OBF4) 3.3.2 May  4 2018 / 09:51:33 (64a292f37) MSP API: 1.38
+
+# name
+name Tron2D
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature TELEMETRY
+feature AIRMODE
+feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
+
+# beeper
+beeper -ON_USB
+
+# map
+map TAER1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 2 32 115200 57600 0 115200
+serial 5 2048 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 1 1300 1700 0
+aux 1 13 1 1700 2100 0
+aux 2 35 0 1300 2100 0
+
+# adjrange
+adjrange 0 0 3 900 2100 12 3
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set gyro_notch1_hz = 0
+set gyro_notch2_hz = 0
+set acc_hardware = NONE
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1020
+set max_check = 1980
+set serialrx_provider = SBUS
+set motor_pwm_protocol = DSHOT600
+set pid_process_denom = 1
+set osd_warnings = 63
+set osd_vbat_pos = 2508
+set osd_tim_2_pos = 2518
+set osd_vtx_channel_pos = 2498
+set osd_craft_name_pos = 2092
+set osd_disarmed_pos = 2283
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_freq = 5917
+
+# profile
+profile 0
+
+set dterm_lowpass_type = PT1
+set setpoint_relax_ratio = 40
+set dterm_setpoint_weight = 106
+set p_pitch = 32
+set d_pitch = 14
+set p_roll = 26
+set d_roll = 12
+
+# rateprofile
+rateprofile 0
+
+set roll_rc_rate = 90
+set pitch_rc_rate = 90
+set yaw_rc_rate = 90
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+set roll_srate = 82
+set pitch_srate = 82
+set yaw_srate = 82
+
+# rateprofile
+rateprofile 1
+
+set roll_rc_rate = 50
+set pitch_rc_rate = 50
+set yaw_rc_rate = 50

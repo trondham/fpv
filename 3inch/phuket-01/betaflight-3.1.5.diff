@@ -1,0 +1,62 @@
+# Betaflight / OMNIBUSF4 3.1.5 Feb  7 2017 / 22:20:12 (4646f9d)
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature MOTOR_STOP
+feature GPS
+feature CURRENT_METER
+feature LED_STRIP
+
+# beeper
+
+# map
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 5 2 115200 57600 0 115200
+
+# led
+led 0 0,15::ATI:0
+led 1 1,15::ATI:0
+led 2 2,15::ATI:0
+led 3 3,15::ATI:0
+led 4 4,15::ATI:0
+led 5 5,15::ATI:0
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1700 2100
+
+# adjrange
+
+# rxrange
+
+# rxfail
+
+# master
+set motor_pwm_protocol = DSHOT600
+set gps_provider = UBLOX
+set serialrx_provider = SBUS
+set osd_vbat_pos = 2502
+set osd_current_pos = 2514
+
+# profile
+profile 0
+
+rateprofile 0
+
+# rateprofile
+rateprofile 0
