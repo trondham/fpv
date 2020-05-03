@@ -107,6 +107,7 @@ profile 0
 set dyn_lpf_dterm_min_hz = 105
 set dyn_lpf_dterm_max_hz = 255
 set dterm_lowpass2_hz = 225
+set idle_min_rpm = 15
 
 profile 1
 
