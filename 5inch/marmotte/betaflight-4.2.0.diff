@@ -105,6 +105,8 @@ profile 0
 set dyn_lpf_dterm_min_hz = 105
 set dyn_lpf_dterm_max_hz = 255
 set dterm_lowpass2_hz = 225
+set vbat_sag_compensation = 100
+set ff_interpolate_sp = AVERAGED_3
 set idle_min_rpm = 14
 
 profile 1
